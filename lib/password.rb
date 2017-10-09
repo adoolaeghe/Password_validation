@@ -1,0 +1,3 @@
+def password(s)
+  
+end
