@@ -1,0 +1,3 @@
+def passcode(s)
+  
+end
