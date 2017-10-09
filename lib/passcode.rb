@@ -1,8 +1,3 @@
 def passcode(s)
-  regex = /\A\d{8}\z/
-  if (regex =~ s) == 0
-    true
-  else
-    false
-  end
+  /\A\d{8}\z/.match(s) != nil
 end
