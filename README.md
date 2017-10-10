@@ -8,11 +8,11 @@
 
 ### Design
 
-The main challenge was to find the suitable and efficient way for checking the string argument according to the given password restrictions; I decided to use the **Regular Expression** to match a patter against a string (I could have use an iteration on each character of the string). I searched to find the right Regexp metacharacter matching with the length pattern and character type selection. Finally, I found the helpful ruby matcher method ```.match(string)``` returning a ```<MatchData "string">``` object if matching otherwise  returns ```nil```.   
+The main challenge was to find the suitable and efficient way for checking the string argument according to the given password restrictions; I decided to use the **Regular Expression** to match a patter against a string (I could have use an iteration on each character of the string). I searched for documentation to find the right Regexp metacharacter matching with the length and character type pattern. Finally, I found the helpful ruby matcher method ```.match(string)``` returning a ```<MatchData "string">``` object if matching, otherwise it returns ```nil```.   
 
 ### Project structure approach
 
-In order to TDD the project, I first asked myself whether I should use a seperate Rspec unit tests to isolate the tests. Then I finally decided to extract the assertions given by the instruction into seperate files. This allowed me to create an appropriate seperation of test on each method, I was then able to follow the TDD methodology for the project. All the tests are runned from a unique command in irb using a SpecHelper file. 
+In order to TDD the project, I first asked myself whether I should use a Rspec to isolate the concerns of my tests. Then I finally decided to extract the assertions given by the instructions into seperate files. This allowed me to create an appropriate seperation of concerns for each method, I was then able to follow a TDD methodology for the project. All the tests are runned from a unique command in irb using a SpecHelper file. 
 
 ### Instructions 
 
